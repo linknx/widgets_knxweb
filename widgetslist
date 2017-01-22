@@ -1,0 +1,22 @@
+Directory of the widget|Description of the widget|Version
+temp|Old widget temp in knxweb v0.7|1.1
+digiclock|Digital Clock en weather|1
+foscam|Display and command foscam IP CAM|1
+reqhttp|HTTP Request|1
+freebox|Freebox remote|1
+thermostat|thermostat (credits Mika-nt28)|0.4
+smarttv|Smart TV Samsung (credits M. HALBOUT)|0.1
+polygon|Polygon selected zone (credits manupap1)|1
+audioalert|Play audio file when on object condition|1
+bpupdown|Button action on Up/Down|1
+cameraRTSP|IP Camera stream RTSP with VLC plugin|1
+camerazoom|IP Camera stream viewer that opens on activity|1
+charts_gauge|Gauge with Highcharts|1
+colorpicker|Color Picker|1
+conso|Conso|1
+linknxwebbox|LinKnxWebBox|1
+objecthistory|Object history|1
+sendvalue|Send Value|1
+setclock|Clock Setter|1
+thermostatmode|Thermostat mode button|1
+valueedit|Value Edit|1

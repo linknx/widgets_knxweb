@@ -25,3 +25,6 @@ template/template_c/*
 design/plugins.xml
 design/subpages.xml
 design/default/*
+
+CVS/
+cvs*.*
