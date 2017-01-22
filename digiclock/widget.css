@@ -1,0 +1,235 @@
+.digiclock {
+  vertical-align: middle;
+  text-align: center;
+  width:500px;
+  height:420px;
+}
+
+.digiclock #plugin_container {
+    width:500px;
+    height:420px;
+    position:relative;
+    /*background:url(../images/htc_hero_wallpaper_02.jpg);*/
+    overflow:hidden;
+    font-family:Arial, Verdana, Tahoma, Helvetica, sans-serif;
+    color:#fff;
+}
+
+.digiclock #plugin_container p {
+    margin:0;
+    padding:0;
+}
+
+.digiclock #left_arrow, .digiclock #right_arrow {
+    position:absolute;
+    top:200px;
+    z-index:200;
+    cursor:pointer;
+}
+
+.digiclock #left_arrow {
+    left:5px;
+}
+
+.digiclock #right_arrow {
+    right:5px;
+}
+
+.digiclock #digital_container {
+    width:500px;
+    height:360px;
+    background:url(images/background.png) 50% 40px no-repeat;
+    position:absolute;
+    top:40px;
+    left:0;
+    z-index:98;
+}
+
+
+.digiclock #clock {
+    float:left;
+    margin-left:48px;
+}
+
+.digiclock #hours, .digiclock #minutes {
+    width:200px;
+    height:200px;
+    float:left;
+    position:relative;
+}
+
+.digiclock #minutes {
+    margin-left:4px;
+}
+
+.digiclock #hours_bg, .digiclock #minutes_bg {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:99;
+}
+
+.digiclock .first_digit {
+    width:80px;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:20px;
+    z-index:100;
+}
+
+.digiclock .second_digit {
+    width:80px;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:100px;
+    z-index:100;
+}
+
+.digiclock .line {
+    width:175px;
+    height:2px;
+    background:#efefef;
+    position:absolute;
+    top:97px;
+    left:12px;
+    z-index:101;
+    font-size:1px;
+}
+
+.digiclock #am_pm {
+    position:absolute;
+    top:156px;
+    left:130px;
+    z-index:110;
+}
+
+.digiclock #weather {
+    width:100%;
+    height:206px;
+    position:absolute;
+    top:140px;
+    left:0;
+    z-index:105;
+    color:#fff;
+}
+
+.digiclock #weather #local, .digiclock #weather .loading {
+    float:left;
+    margin:65px 0 0 45px;
+}
+
+.digiclock .city {
+    font-weight:bold;
+    font-size:12pt;
+}
+
+.digiclock .temp {
+    font-size:30pt;
+    padding:0;
+}
+
+.digiclock .temp .metric {
+    margin-left:-3px;
+}
+
+.digiclock #weather #temp {
+    float:right;
+    margin:65px 45px 0 0;
+    text-align:right;
+}
+
+.digiclock #weather #date {
+    font-size:11pt;
+    padding-right:2px;
+}
+
+.digiclock #forecast_container {
+    width:500px;
+    height:400px;
+    background:url(images/background_forecast.png) 50% 100% no-repeat;
+    position:absolute;
+    top:0;
+    left:500px;
+    z-index:98;
+}
+
+.digiclock #forecast_container #current {
+    width:400px;
+    height:240px;
+    margin-left:50px;
+    position:relative;
+}
+
+.digiclock #forecast_container .loading {
+    margin:130px 0 0 70px;
+}
+
+.digiclock #forecast_container #current .temp, .digiclock #forecast_container #current .high_low {
+    width:116px;
+    text-align:center;
+}
+
+.digiclock #forecast_container #current .temp {
+    font-size:32pt;
+    margin-top:110px;
+    height: 50px;
+    float:left
+}
+
+.digiclock #forecast_container #current .high_low {
+    font-size:12pt;
+    clear:both;
+}
+
+.digiclock #forecast_container #current .city, .digiclock #forecast_container #current .text {
+    width:100%;
+    text-align:center;
+}
+
+.digiclock #forecast_container #current .text {
+    margin-top:6px;
+}
+
+.digiclock #forecast_container #forecast {
+    width:400px;
+    height:122px;
+    list-style:none;
+    margin:0 0 0 50px;
+    padding:0;
+}
+
+.digiclock #forecast_container #forecast li {
+    width:25%;
+    height:100%;
+    float:left;
+    text-align:center;
+}
+
+.digiclock #forecast_container #forecast li p {
+    width:100%;
+    height: 20px;
+    margin:0;
+    padding:0;
+    font-size:11pt;
+    line-height:20px;
+}
+
+.digiclock #forecast_container #forecast li img {
+    width:96px;
+}
+
+.digiclock #forecast_container #update {
+    text-align:center;
+    margin-top:10px;
+    font-size:11px;
+}
+
+.digiclock #forecast_container #update img {
+    margin:-2px 4px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+}

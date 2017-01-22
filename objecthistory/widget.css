@@ -1,0 +1,41 @@
+.objecthistory {
+  background-color: #F2F5F7;
+  font-size: 10px;
+  width: 250px;
+  height: auto;
+  top: 20px;
+  left: 600px;
+  position: absolute;
+  border: 1px #DDDDDD solid;
+}
+
+.objecthistory .title {
+  line-height: 21px;
+  font-size: 11px;
+  padding-top: 3px;
+  padding-left: 6px;
+}
+
+.objecthistory table {
+  width: 100%;
+}
+
+.objecthistory table tbody th {
+  height: 20px;
+  width: 70%;
+  text-align: left;
+}
+
+.objecthistory table tbody td {
+  height: 20px;
+  width: 30%;
+}
+
+.objecthistory table tbody td input {
+  border: 0;
+  width: 100%;
+}
+
+.objecthistory table tbody td:last {
+  background-color: #F00;
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget>
+  <name>smarttv</name>
+  <label>Télécommande Smart TV</label>
+  <description>Télécommande Smart TV</description>
+  <version>0.1</version>
+  <category>Various widgets</category>
+  <settings>
+    <setting id="ScreenColor" label="Couleur du fond" type="color" default="#CDCDCD"/>
+    <setting id="tvip" label="TV IP" type="text" default="192.168.1.96"/>
+    <setting id="mymac" label="TV MAC" type="text" default="00-0c-29-3e-b1-4f"/>
+  </settings>
+</widget>

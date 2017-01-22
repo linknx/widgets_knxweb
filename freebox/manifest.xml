@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget>
+  <name>freebox</name>
+  <label>Télécommande Freebox</label>
+  <description>Télécommande Freebox</description>
+  <version>1.0</version>
+  <category>Various widgets</category>
+  <settings>
+    <setting id="boitier" label="Boitier" type="text" default="1" />
+    <setting id="code" label="Code" type="text" />
+    <setting id="version" label="Freebox" type="list" default="v5">
+      <option key="v5" value="V5" />
+      <option key="v6" value="Révolution V6" />
+    </setting>
+    <setting id="zoom" label="Zoom" type="text" default="500"/>
+    <setting id="title" label="Set Title" type="list" default="no" >
+      <option key="no" value="No" />
+      <option key="yes" value="Yes" />
+    </setting>
+  </settings>
+</widget>

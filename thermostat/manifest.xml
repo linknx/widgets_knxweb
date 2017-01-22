@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget>
+  <name>thermostat</name>
+  <label>Thermostat</label>
+  <description>thermostat</description>
+  <version>0.4</version>
+  <category>Various widgets</category>
+  <settings>
+    <setting label="State object" type="comment" />
+    <setting type="text" id="Idthermostat" label="Id" default="" />
+	<setting id="TypeRules" label="Type des Rules" type="list">
+		<option key="Mode" value="Mode" />
+		<option key="Consigne" value="Consigne" />
+	</setting>
+    <setting type="separator" label="" />
+    <setting id="ScreenColor" label="Couleur de l'écran" type="color" default="#3AC7FF" />
+    <setting type="separator" label="" />
+    <setting id="reel-object" label="Température Réel" type="object" only_type="9.xxx" /> 
+    <setting type="separator" label="" />
+    <setting id="consigne-object" label="Température de Consigne" type="object" only_type="9.xxx" />
+    <setting id="consigne-offset" label="Offset Consigne" type="text" default="0.5"/>
+    <setting type="separator" label="" />
+    <setting id="ext-object" label="Température Exterieur" type="object" only_type="9.xxx" />
+    <setting id="mode-object" label="Mode" type="object" only_type="20.102" />
+    <setting type="separator" label="" />
+    <setting type="text" id="mod" label="Modulo" default="0.01" />
+    <setting type="text" id="decimal" label="Decimal" default="2" />
+    <setting type="text" id="scale" label="Scale" default="100" />
+    <setting type="text" id="tempinf" label="Lower" default="-99" />
+    <setting type="text" id="tempsup" label="Top" default="99" />
+    <setting type="text" id="tempmin" label="Mini" default="-20" />
+    <setting type="text" id="tempmax" label="Maxi" default="60" />
+  </settings>
+  <feedbacks>
+    <feedback id="reel-object" />
+    <feedback id="consigne-object" />
+    <feedback id="ext-object" />
+    <feedback id="mode-object" />
+  </feedbacks>
+</widget>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget>
+  <name>digiclock</name>
+  <label>Digiclock</label>
+  <description>Clock</description>
+  <version>1.0</version>
+  <category>Various widgets</category>
+  <settings>
+    <setting id="weatherLocationCode" label="Weather Location" type="text" default="EUR|FR|FR006|RENNES" />
+    <setting id="lang" label="Langue" type="list" default="en">
+      <option key="en" value="English"/>
+      <option key="fr" value="Français"/>
+    </setting>
+  </settings>
+</widget>

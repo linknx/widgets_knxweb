@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget>
+  <name>objecthistory</name>
+  <label>Object history</label>
+  <description>Object history</description>
+  <version>1.0</version>
+  <category>Basic widgets</category>
+  <settings>
+    <setting id="title" label="Title" type="text"/>
+    <setting id="feedback-object" label="Object" type="object" />
+    <setting id="nbenreg" label="Nb Enreg" type="text" default="5" />
+  </settings>
+  <feedbacks>
+    <feedback id="feedback-object" />
+  </feedbacks>
+</widget>
