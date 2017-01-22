@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget>
+	<name>foscam</name>
+	<label>Foscam CAM IP</label>
+	<description>Foscam IP Camera stream</description>
+	<version>1.0</version>
+	<category>Camera widgets</category>
+	<settings>
+		<setting id="user" label="User" type="text" />
+    <setting id="pwd" label="Password" type="text" />
+		<setting id="resolution" label="Resolution" type="list" default="320_240">
+			<option key="8" value="320*240" />
+			<option key="32" value="640*480" />
+		</setting>
+		<setting id="rate" label="Rate" type="list" default="0">
+			<option key="0" value="maxframe" />
+			<option key="1" value="20 fps" />
+			<option key="3" value="15 fps" />
+			<option key="6" value="10 fps" />
+			<option key="11" value="5 fps" />
+			<option key="12" value="4 fps" />
+			<option key="13" value="3 fps" />
+			<option key="14" value="2 fps" />
+			<option key="15" value="1 fps" />
+			<option key="17" value="1 fps/2s" />
+			<option key="19" value="1 fps/3s" />
+			<option key="21" value="1 fps/4s" />
+			<option key="23" value="1 fps/5s" />
+		</setting>
+    <setting label="" type="separator" />
+    <setting id="url" label="Cam Ip:port" type="text" default="192.168.1.40:80"/>
+		<setting id="url_type" label="Type" type="list" default="snapshot">
+			<option key="snapshot" value="Snapshot" />
+			<option key="videostream" value="Videostream" />
+		</setting>
+    <!--  <setting label="" type="separator" />
+    <setting id="ext_url" label="Internet ip:port" type="text" default="foscam.mondomaine.fr:80"/>
+		<setting id="ext_url_type" label="Type" type="list" default="snapshot">
+			<option key="snapshot" value="Snapshot" />
+			<option key="videostream" value="Videostream" />
+		</setting> -->
+    <setting label="" type="separator" />
+    <setting id="picture" label="Picture" type="picture" default="widgets/foscam/foscam_64x64.png"/>
+	</settings>
+</widget>

@@ -1,0 +1,27 @@
+
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+*.cache
+*.log
+sav/
+.sv
+*.*~
+
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+_default/
+
+#Mr Developer
+.mr.developer.cfg
+include/config.xml
+template/template_c/*
+design/plugins.xml
+design/subpages.xml
+design/default/*

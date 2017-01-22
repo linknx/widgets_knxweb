@@ -1,0 +1,6 @@
+.charts_gauge, .container  {
+  min-width: 310px;
+  max-width: 400px;
+  height: 300px;
+  margin: 0 auto;
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget>
+	<name>bpupdown</name>
+	<label>Button Up Down</label>
+	<description>Button action on Up/Down</description>
+	<version>1.0</version>
+	<category>Basic widgets</category>
+	<settings>
+		<setting type="comment" label="Picture" />
+		<setting type="picture" label="Up Picture"   id="up-picture" />
+		<setting type="picture" label="Down Picture" id="down-picture" />
+		<setting type="comment" label="Label" />
+		<setting type="text"    label="Text"         id="text"  default="My button" />
+		<setting type="text"    label="Font size"    id="size"  default="12" />
+		<setting type="color"   label="Color"        id="color" default="#000000" />
+		<setting type="list"    label="Text align"   id="align" default="" >
+			<option key="" value="Default" />
+			<option key="left" value="Left" />
+			<option key="center" value="Center" />
+			<option key="right" value="Right" />
+		</setting>
+		<setting type="text"    label="Top padding"  id="text-padding"      default="0" />
+		<setting type="text"    label="Left padding" id="text-padding-left" default="0" />
+		<!--setting type="comment" label="Button mode" /-->
+		<setting type="comment" label="Action when mouse down" />
+		<setting type="action"  label="Action"       id="down-action" />
+		<setting type="comment" label="Action when mouse up" />
+		<setting type="action"  label="Action"       id="up-action" />
+	</settings>
+	<feedbacks>
+	</feedbacks>
+</widget>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget>
+	<name>colorpicker</name>
+	<label>Color Picker</label>
+	<description>Color Picker</description>
+	<version>1.0</version>
+	<category>Various widgets</category>
+	<settings>
+		<setting id="color" label="Color background" type="color" default="#FF0000" />
+    <setting id="picture" label="Picture background" type="picture" />
+		<setting id="border" label="Border" type="list" default="true">
+			<option key="true" value="Yes" />
+			<option key="false" value="No" />
+		</setting>
+		<setting id="border-color" label="Border color" type="color" default="#000000" />
+    <setting label="Feedback object" type="comment" default="" />
+		<setting id="feedback-color" label="Feedback hexa #RGB" type="object" default="" only_type="16.000,16.001,28.001" />
+    <setting id="feedback-red" label="Feedback red 0-255" type="object" default="" only_type="5.xxx" />
+    <setting id="feedback-green" label="Feedback green 0-255" type="object" default="" only_type="5.xxx" />
+    <setting id="feedback-blue" label="Feedback blue 0-255" type="object" default="" only_type="5.xxx" />
+    <setting id="feedback-HSL" label="Feedback [H,S,L]" type="object" default="" only_type="" />
+    <setting label="Command object" type="comment" default="" />
+		<setting id="command-type" label="Command type" type="list" default="valid" display="none">
+			<option key="valid" value="The validation" />
+			<option key="move" value="The move" />
+			<option key="laid-move" value="The validate and move" />
+		</setting>
+		<setting id="command-color" label="Command hexa #RGB" type="object" default="" only_type="16.000,16.001,28.001"  />
+    <setting id="command-red" label="Command red 0-255" type="object" default="" only_type="5.xxx" />
+    <setting id="command-green" label="Command green 0-255" type="object" default="" only_type="5.xxx" />
+    <setting id="command-blue" label="Command blue 0-255" type="object" default="" only_type="5.xxx" />
+    <setting id="command-HSL" label="Command [H,S,L]" type="object" default="" />
+</settings>
+	<feedbacks>
+		<feedback id="feedback-color" />
+    <feedback id="feedback-red" />
+    <feedback id="feedback-green" />
+    <feedback id="feedback-blue" />
+    <feedback id="feedback-HSL" />
+	</feedbacks>
+</widget>

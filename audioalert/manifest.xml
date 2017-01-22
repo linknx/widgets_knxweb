@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget>
+	<name>audioalert</name>
+	<label>Audio Alert</label>
+	<description>Play audio file when on object condition</description>
+	<version>1.0</version>
+	<category>Various widgets</category>
+	<settings>
+		<setting id="sound-file" label="Sound file" type="text"/>
+		<setting id="feedback-object" label="Feedback object" type="object" />
+		<setting id="feedback-compare" label="Operator" type="list" default="eq">
+			<option key="eq" value="Equal to" />
+			<option key="neq" value="Not equal to" />
+			<option key="gt" value="Greater than" />
+			<option key="lt" value="Less than" />
+			<option key="gte" value="Greater or equal to" />
+			<option key="lte" value="Less or equal to" />
+		</setting>
+		<setting id="feedback-value" label="Value for active" type="text" />
+	</settings>
+	<feedbacks>
+		<feedback id="feedback-object" />
+	</feedbacks>
+</widget>

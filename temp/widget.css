@@ -1,0 +1,99 @@
+.temp {
+  font-size: 100px;
+  width:100px;
+  height:100px;
+}
+.temp .icone{
+z-index: 0;
+font-size: 100%;
+background-color: black;
+opacity: 0.6;
+width:100%;
+height:100%;
+position:relative;
+color: #FFFFFF;
+}
+.arrondi{
+-moz-border-radius-bottomleft:6px;
+-moz-border-radius-bottomright:6px;
+-moz-border-radius-topleft:6px;
+-moz-border-radius-topright:6px;
+-webkit-border-bottom-left-radius: 6px;
+-webkit-border-bottom-right-radius: 6px;
+-webkit-border-top-left-radius: 6px;
+-webkit-border-top-right-radius: 6px;
+border-bottom-left-radius: 6px 6px;
+border-bottom-right-radius: 6px 6px;
+border-top-left-radius: 6px 6px;
+border-top-right-radius: 6px 6px;
+}
+.temp .thermometre{
+width:12%;
+height:80%;
+position:relative;
+left:10%;
+top:10%;
+background:#FFF;
+}
+.temp .temperature{
+position:absolute;
+bottom:2px;
+left:2px;
+right:2px;
+background:#F00;
+-moz-border-radius-topleft:0px;
+-moz-border-radius-topright:0px;
+-webkit-border-top-left-radius: 0px;
+-webkit-border-top-right-radius: 0px;
+border-top-left-radius: 0px 0px;
+border-top-right-radius: 0px 0px;
+}
+.temp .chiffre{
+position:absolute;
+bottom:10%;
+left:25%;
+width:70%;
+font-family: Arial;
+font-size: 100%;
+height:80%;
+top:10%;
+}
+.temp .entiers{
+position: relative;
+float: right;
+margin-right: 42%;
+font-size:40%;
+top:50%;
+margin-top:-0.5em;
+left:0px;
+font-weight: bold;
+}
+.temp .decimales{
+position:absolute;
+font-size:16%;
+top:50%;
+right:5%;
+width:25%;
+text-align: left;
+}
+.temp .deg{
+position:absolute;
+font-size:12%;
+bottom:50%;
+right:5%;
+font-weight: bold;
+}
+.temp .plus{
+position:absolute;
+left:30%;
+font-size:16%;
+top:10%;
+font-weight: bold;
+}
+.temp .moins{
+position:absolute;
+left:30%;
+font-size:16%;
+bottom:10%;
+font-weight: bold;
+}

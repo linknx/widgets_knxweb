@@ -1,0 +1,62 @@
+.linknxwebbox {
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+  width: 195px;
+}
+.linknxwebbox div {
+  float: left;
+}
+.linknxwebbox .global {
+  width: 177px;
+  padding: 8px;
+  font-size: 32px;
+  border: 1px solid black;
+  font-weight: bold;
+  text-decoration: none;
+  text-decoration: none;
+  text-shadow:0 -1px 1px #000;
+  border-radius: 8px;
+  box-shadow:0 1px 3px rgba(0,0,0,0.5);
+  -moz-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+  -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+  color: #fff;
+  background:#000;
+  background:-webkit-gradient(linear,left bottom,left top,color-stop(0.5, #000),color-stop(0.5, #6e6e6e));
+  background:-moz-linear-gradient(#6e6e6e 50%,#000 50%);
+  background:-ms-linear-gradient(#6e6e6e 50%,#000 50%);
+  background:-o-linear-gradient(#6e6e6e 50%,#000 50%);
+}
+.linknxwebbox .refresh {
+  background-image: url('../../images/refresh.gif');
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+}
+.linknxwebbox span {
+  padding: 0 0 0 18px;
+  font-size: 12px;
+}
+.linknxwebbox span.disk {
+  background-image: url('../../images/disk.png');
+  width: 17px;
+  height: 17px;
+  padding: 0;
+  position: absolute;
+}
+.linknxwebbox .ok {
+  background-image: url('../../images/ok.png');
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  position: absolute;
+}
+.linknxwebbox .ko {
+  background-image: url('../../images/ko.png');
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  position: absolute;
+}

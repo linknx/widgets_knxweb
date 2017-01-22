@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget>
+  <name>charts_gauge</name>
+  <label>Charts Gauge</label>
+  <description>Gauge with Highcharts</description>
+  <version>1.0</version>
+  <category>Various widgets</category>
+  <settings>
+    <setting id="title" label="Titre" type="text" default="Ma jauge" />
+    <setting label="Style" type="comment" />
+    <setting id="min" label="Min" type="text" default="0" />
+    <setting id="max" label="Max" type="text" default="100" />
+    <setting id="unit" label="Unit" type="text" default="km/h" />
+    <setting label="Feedback object" type="comment" />
+    <setting id="object" label="Object" type="object" />
+  </settings>
+  <feedbacks>
+    <feedback id="object" />
+  </feedbacks>
+</widget>

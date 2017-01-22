@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget>
+  <name>temp</name>
+  <label>Temp</label>
+  <description>temp</description>
+  <version>1.1</version>
+  <category>Various widgets</category>
+  <settings>
+    <setting label="State object" type="comment" />
+		<setting id="feedback-object" label="Feedback" type="object" only_type="9.xxx,9.001,9.003" />
+    <setting type="separator" label="" />
+    <setting type="text" id="mod" label="Modulo" default="0.01" />
+    <setting type="text" id="decimal" label="Decimal" default="2" />
+    <setting type="text" id="scale" label="Scale" default="100" />
+    <setting type="text" id="tempinf" label="Lower" default="-99" />
+    <setting type="text" id="tempsup" label="Top" default="99" />
+    <setting type="text" id="tempmin" label="Mini" default="-99" />
+    <setting type="text" id="tempmax" label="Maxi" default="99" />
+    <!--
+    <setting label="Label" type="comment" />
+    <setting id="picture" label="Picture" type="picture" />
+    <setting id="background" label="Background Color" type="color" default="#FFFFFF" />
+    <setting id="border" label="Border Icone" type="list" default="true">
+			<option key="true" value="Yes" />
+			<option key="false" value="No" />
+		</setting>
+		<setting id="title-text" label="Title Text" type="text" default="Title" />		
+		<setting id="dimmer" label="Dimmable" type="list" default="false">
+			<option key="true" value="Yes" />
+			<option key="false" value="No" />
+		</setting>
+		
+		<setting label="Command object" type="comment" />
+		<setting id="command-object" label="Command object" type="object" />
+		
+		<setting label="State object" type="comment" />
+		<setting id="feedback-object" label="Feedback On/Off object" type="object" />
+		<setting id="feedback-percent-object" label="Feedback Percent object" type="object" />
+		<setting id="pattern" label="Pattern" type="text" default="(.*)%" />
+		
+		<setting label="Action when inactive" type="comment" />
+		<setting id="inactive-action" label="Action" type="action" />
+
+		<setting label="Action when active" type="comment" />
+		<setting id="active-action" label="Action" type="action" />
+		-->
+  </settings>
+  <feedbacks>
+    <feedback id="feedback-object" />
+  </feedbacks>
+</widget>

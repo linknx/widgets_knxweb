@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget>
+	<name>linknxwebbox</name>
+	<label>LinKnxWebBox</label>
+	<description>LinKnxWebBox</description>
+	<version>1.0</version>
+	<category>Basic widgets</category>
+	<settings>
+    <setting label="State programs" type="comment" />
+    <setting id="program1" label="Program N°1" type="text" default="eibd" />
+    <setting id="program2" label="Program N°2" type="text" default="linknx" />
+    <setting id="program3" label="Program N°3" type="text" default="mpd" />
+    <setting id="program4" label="Program N°4" type="text" default="" />
+    <setting id="program5" label="Program N°5" type="text" default="" />
+    <setting id="program6" label="Program N°6" type="text" default="" />
+	</settings>
+	<feedbacks/>
+</widget>

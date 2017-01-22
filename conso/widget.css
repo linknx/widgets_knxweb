@@ -1,0 +1,26 @@
+.conso {
+  width: 100px;
+  height: auto;
+}
+.conso .affconso {
+  width: 32px;
+  height: 32px;
+}
+.conso table, .conso th, .conso td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.conso th, .conso td {
+    padding: 5px;
+    text-align: left;
+}
+.conso tr:nth-child(even) {
+    background-color: #eee;
+}
+.conso tr:nth-child(odd) {
+   background-color:#fff;
+}
+.conso th	{
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget>
+  <name>reqhttp</name>
+  <label>HTTP Request</label>
+  <description>HTTP Request</description>
+  <version>1.0</version>
+  <category>Various widgets</category>
+  <settings>
+    <setting label="" type="separator" />
+    <setting id="picture" label="Picture" type="picture" />
+    <setting id="picture-active" label="Active picture" type="picture" />
+    <setting label="Only on Edit Mode" type="comment" />
+    <setting id="display-picture" label="Display active picture" type="list" default="no">
+      <option key="no" value="No" />
+      <option key="yes" value="Yes" />
+    </setting>
+
+    <setting label="Label" type="comment" />
+    <setting id="text" label="Text" type="text" default="My button" />
+    <setting id="size" label="Font size" type="text" default="12" />
+    <setting id="color" label="Color" type="color" default="#000000" />
+    <setting id="align" label="Text align" type="list" default="" >
+      <option key="" value="Default" />
+      <option key="left" value="Left" />
+      <option key="center" value="Center" />
+      <option key="right" value="Right" />
+    </setting>
+    <setting id="text-padding" label="Top padding" type="text" default="0" />
+    
+    <setting label="State object" type="comment" />
+    <setting id="feedback-object" label="Feedback object" type="object" />
+    <setting id="feedback-compare" label="Operator" type="list" default="eq">
+      <option key="eq" value="Equal to" />
+      <option key="neq" value="Not equal to" />
+      <option key="gt" value="Greater than" />
+      <option key="lt" value="Less than" />
+      <option key="gte" value="Greater or equal to" />
+      <option key="lte" value="Less or equal to" />
+    </setting>
+    <setting id="feedback-value" label="Value for active" type="text" />
+    
+    <setting label="http://user:password@url:port/page" type="comment" />
+    <setting id="protocol" label="Protocol" type="list" default="http">
+      <option key="http" value="http" />
+      <option key="https" value="https" />
+      <option key="ftp" value="ftp" />
+    </setting>
+    <setting id="user" label="User" type="text" default=""/>
+    <setting id="pwd" label="Password" type="text" default=""/>
+    <setting id="url" label="URL" type="text" default="localhost"/>
+    <setting id="port" label="Port" type="text" default="80"/>
+    <setting id="page" label="Page" type="text" default=""/>
+    <setting label="" type="separator" />
+    <setting id="page" label="Page" type="text" default=""/>
+    <setting id="method" label="Method" type="list" default="GET">
+      <option key="GET" value="GET" />
+      <option key="POST" value="POST" />
+    </setting>
+    <setting id="server" label="Sent by the server" type="list" default="no">
+      <option key="no" value="No" />
+      <option key="yes" value="Yes" />
+    </setting>
+    <setting label="Datas" type="comment" />
+    <setting label="/page?datas" type="comment" />
+    <setting id="datas" label="Datas" type="text" />
+    
+    <setting label="Params" type="comment" />
+    <setting label="/page?code1=data1&amp;code2=data2..." type="comment" />
+    <setting id="code1" label="Code 1" type="text" />
+    <setting id="data1" label="Data 1" type="text" />
+    <setting id="data1_object" label="Data 1 object" type="object" />
+    <setting label="" type="separator" />
+    <setting id="code2" label="Code 2" type="text" />
+    <setting id="data2" label="Data 2" type="text" />
+    <setting id="data2_object" label="Data 2 object" type="object" />
+    <setting label="" type="separator" />
+    <setting id="code3" label="Code 3" type="text" />
+    <setting id="data3" label="Data 3" type="text" />
+    <setting id="data3_object" label="Data 3 object" type="object" />
+    <setting label="" type="separator" />
+    <setting id="code4" label="Code 4" type="text" />
+    <setting id="data4" label="Data 4" type="text" />
+    <setting id="data4_object" label="Data 4 object" type="object" />
+    <setting label="" type="separator" />
+    <setting id="code5" label="Code 5" type="text" />
+    <setting id="data5" label="Data 5" type="text" />
+    <setting id="data5_object" label="Data 5 object" type="object" />
+  </settings>
+  <feedbacks>
+    <feedback id="feedback-object" />
+  </feedbacks>
+</widget>

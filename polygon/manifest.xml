@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget>
+  <name>polygon</name>
+  <label>Polygon</label>
+  <description>Polygon</description>
+  <version>1.0</version>
+  <category>Various widgets</category>
+  <settings>
+    <setting label="Coordinates" type="comment" />
+      <setting id="x-coords" label="X" type="text" default="" />
+      <setting id="y-coords" label="Y" type="text" default="" />
+    <setting label="Edit mode only" type="comment" />
+      <setting id="editmode-display-active" label="Display state" type="list" default="false">
+        <option key="false" value="Inactive" />
+        <option key="true" value="Active" />
+      </setting>
+    <setting label="Behaviour when inactive" type="comment" />
+      <setting id="inactive-display" label="Display" type="list" default="true">
+        <option key="false" value="No" />
+        <option key="true" value="Yes" />
+      </setting>
+      <setting id="inactive-alwayson" label="Always on" type="list" default="true">
+        <option key="false" value="No" />
+        <option key="true" value="Yes" />
+      </setting>
+      <setting id="inactive-fade" label="Fade" type="list" default="true">
+        <option key="false" value="No" />
+        <option key="true" value="Yes" />
+      </setting>
+    <setting label="Behaviour when active" type="comment" />
+      <setting id="active-display" label="Display" type="list" default="true">
+        <option key="false" value="No" />
+        <option key="true" value="Yes" />
+      </setting>
+      <setting id="active-alwayson" label="Always on" type="list" default="true">
+        <option key="false" value="No" />
+        <option key="true" value="Yes" />
+      </setting>
+      <setting id="active-fade" label="Fade" type="list" default="true">
+        <option key="false" value="No" />
+        <option key="true" value="Yes" />
+      </setting>
+    <setting label="Background" type="comment" />
+      <setting id="background-fill" label="Fill" type="list" default="true">
+        <option key="false" value="No" />
+        <option key="true" value="Yes" />
+      </setting>
+      <setting id="background-color" label="Color" type="color" default="#000000" />
+      <setting id="background-opacity" label="Opacity" type="text" default="0.2" />
+    <setting label="Active background" type="comment" />
+      <setting id="background-active-fill" label="Fill" type="list" default="true">
+        <option key="false" value="No" />
+        <option key="true" value="Yes" />
+      </setting>
+      <setting id="background-active-color" label="Color" type="color" default="#000000" />
+      <setting id="background-active-opacity" label="Opacity" type="text" default="0.2" />
+    <setting label="Stroke" type="comment" />
+      <setting id="stroke-display" label="Display" type="list" default="true">
+        <option key="false" value="No" />
+        <option key="true" value="Yes" />
+      </setting>
+      <setting id="stroke-color" label="Color" type="color" default="#FF0000" />
+      <setting id="stroke-opacity" label="Opacity" type="text" default="1" />
+      <setting id="stroke-width" label="Width" type="text" default="1" />
+    <setting label="Active stroke" type="comment" />
+      <setting id="stroke-active-display" label="Display" type="list" default="true">
+        <option key="false" value="No" />
+        <option key="true" value="Yes" />
+      </setting>
+      <setting id="stroke-active-color" label="Color" type="color" default="#FF0000" />
+      <setting id="stroke-active-opacity" label="Opacity" type="text" default="1" />
+      <setting id="stroke-active-width" label="Width" type="text" default="1" />
+    <setting label="Shadow" type="comment" />
+      <setting id="shadow-display" label="Display" type="list" default="false">
+        <option key="false" value="No" />
+        <option key="true" value="Yes" />
+      </setting>
+      <setting id="shadow-x" label="X" type="text" default="0" />
+      <setting id="shadow-y" label="Y" type="text" default="0" />
+      <setting id="shadow-radius" label="Radius" type="text" default="6" />
+      <setting id="shadow-color" label="Color" type="color" default="#000000" />
+      <setting id="shadow-opacity" label="Opacity" type="text" default="0.8" />
+      <setting id="shadow-position" label="Position" type="list" default="outside">
+        <option key="inside" value="Inside" />
+        <option key="outside" value="Outside" />
+        <option key="both" value="Both" />
+      </setting>
+      <setting id="shadow-from" label="From" type="list" default="false">
+        <option key="false" value="" />
+        <option key="stroke" value="Stroke" />
+        <option key="fill" value="Fill" />
+      </setting>
+    <setting label="Active shadow" type="comment" />
+      <setting id="shadow-active-display" label="Display" type="list" default="false">
+        <option key="false" value="No" />
+        <option key="true" value="Yes" />
+      </setting>
+      <setting id="shadow-active-x" label="X" type="text" default="0" />
+      <setting id="shadow-active-y" label="Y" type="text" default="0" />
+      <setting id="shadow-active-radius" label="Radius" type="text" default="6" />
+      <setting id="shadow-active-color" label="Color" type="color" default="#000000" />
+      <setting id="shadow-active-opacity" label="Opacity" type="text" default="0.8" />
+      <setting id="shadow-active-position" label="Position" type="list" default="outside">
+        <option key="inside" value="Inside" />
+        <option key="outside" value="Outside" />
+        <option key="both" value="Both" />
+      </setting>
+      <setting id="shadow-active-from" label="From" type="list" default="false">
+        <option key="false" value="" />
+        <option key="stroke" value="Stroke" />
+        <option key="fill" value="Fill" />
+      </setting>
+    <setting label="Button mode" type="comment" />
+      <setting id="confirm" label="Confirm command" type="list" default="false" >
+        <option key="false" value="No" />
+        <option key="true" value="Yes" />
+      </setting>
+    <setting label="State object" type="comment" />
+      <setting id="feedback-object" label="Feedback object" type="object" />
+      <setting id="feedback-compare" label="Operator" type="list" default="eq">
+        <option key="eq" value="Equal to" />
+        <option key="neq" value="Not equal to" />
+        <option key="gt" value="Greater than" />
+        <option key="lt" value="Less than" />
+        <option key="gte" value="Greater or equal to" />
+        <option key="lte" value="Less or equal to" />
+      </setting>
+      <setting id="feedback-value" label="Value for active" type="text" />
+      <setting label="Action when inactive" type="comment" />
+        <setting id="inactive-goto" label="Goto zone" type="zone" />
+        <setting id="inactive-action" label="Action" type="action" />
+      <setting label="Action when active" type="comment" />
+        <setting id="active-goto" label="Goto zone" type="zone" />
+        <setting id="active-action" label="Action" type="action" />
+  </settings>
+  <feedbacks>
+    <feedback id="feedback-object" />
+  </feedbacks>
+</widget>

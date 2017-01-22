@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget>
+  <name>sendvalue</name>
+  <label>SendValue</label>
+  <description>Send Value</description>
+  <version>1.0</version>
+  <category>Basic widgets</category>
+  <settings>
+    <setting label="" type="separator" />
+    <setting id="picture" label="Picture" type="picture" />
+    <setting label="" type="separator" />
+    <setting id="text" label="Text" type="text" default="Send" />
+    <setting id="size" label="Font size" type="text" default="12" />
+    <setting id="color" label="Color" type="color" default="#000000" />
+    <setting id="align" label="Text align" type="list" default="default" >
+      <option key="" value="Default" />
+      <option key="left" value="Left" />
+      <option key="center" value="Center" />
+      <option key="right" value="Right" />
+    </setting>
+    <setting id="text-padding" label="Top padding" type="text" default="0" />
+    <!--<setting label="" type="separator" /> 
+    <setting id="confirm" label="Confirm command" type="list" default="false" >
+			<option key="false" value="No" />
+			<option key="true" value="Yes" />
+		</setting>-->
+    <setting label="Command object" type="comment" />
+    <setting id="command-object" label="Command object" type="object" />
+
+  </settings>
+  <feedbacks>
+    <!-- <feedback id="feedback-object" /> -->
+  </feedbacks>
+</widget>

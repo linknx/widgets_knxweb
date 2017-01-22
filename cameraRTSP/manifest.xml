@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget>
+	<name>cameraRTSP</name>
+	<label>Camera RTSP</label>
+	<description>IP Camera stream RTSP with VLC plugin</description>
+	<version>1.0</version>
+	<category>Camera widgets</category>
+	<settings>
+    <setting label="http://user@password:IP:port" type="comment" />
+    <setting id="url" label="URL" type="text" />
+	</settings>
+</widget>

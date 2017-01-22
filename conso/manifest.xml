@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget>
+  <name>conso</name>
+  <label>Conso</label>
+  <description>Conso</description>
+  <version>0.1</version>
+  <category>Various widgets</category>
+  <settings>
+    <setting id="picture" label="Picture" type="picture" default="32x32_init.png" />
+
+    <setting label="Delay to date (mysql log)" type="comment" />
+    <setting id="duration" label="Duration" type="text" default="1" />
+    <setting id="periodicity" label="Periodicity" type="list" default="day">
+      <option key="hour" value="Hour" />
+      <option key="day" value="Day" />
+      <!-- <option key="week" value="Week" /> -->
+      <option key="month" value="Month" />
+      <option key="year" value="year" />
+    </setting>
+    <setting label="Nb Enreg (file log)" type="comment" />
+    <setting id="nbenreg" label="Nb Enreg" type="text" default="1000" />
+
+
+    <setting label="Electricity Cost" type="comment" />
+    <setting id="pricekWh" label="Price of 1kWh" type="text" default="0.14400" />
+
+    <setting label="Curves" type="comment" />
+    <setting id="id" label="Object" type="object" />
+
+    <setting id="typecurve" label="Type of the object" type="list" default="switch">
+      <option key="switch" value="Switch On/Off" />
+		</setting>
+    <setting id="puiss" label="Puissance (W)" type="text" />
+    <setting label="" type="separator" />
+    <setting id="id1" label="Object" type="object" />
+    <setting id="typecurve1" label="Type of the object" type="list" default="switch">
+      <option key="switch" value="Switch On/Off" />
+		</setting>
+    <setting id="puiss1" label="Puissance (W)" type="text" />
+    <setting label="" type="separator" />
+    <setting id="id2" label="Object" type="object" />
+    <setting id="typecurve2" label="Type of the object" type="list" default="switch">
+      <option key="switch" value="Switch On/Off" />
+		</setting>
+    <setting id="puiss2" label="Puissance (W)" type="text" />
+    <setting label="" type="separator" />
+    <setting id="id3" label="Object" type="object" />
+    <setting id="typecurve3" label="Type of the object" type="list" default="switch">
+      <option key="switch" value="Switch On/Off" />
+		</setting>
+    <setting id="puiss3" label="Puissance (W)" type="text" />
+    <setting label="" type="separator" />
+    <setting id="id4" label="Object" type="object" />
+    <setting id="typecurve4" label="Type of the object" type="list" default="switch">
+      <option key="switch" value="Switch On/Off" />
+		</setting>
+    <setting id="puiss4" label="Puissance (W)" type="text" />
+
+  </settings>
+  <feedbacks>
+  </feedbacks>
+</widget>

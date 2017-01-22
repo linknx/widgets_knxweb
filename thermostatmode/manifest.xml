@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget>
+	<name>thermostatmode</name>
+	<label>Thermostatmode</label>
+	<description>Thermostat mode button</description>
+	<version>1.0</version>
+	<category>Various widgets</category>
+	<settings>
+		<setting id="picture-none" label="Unitialized Picture" type="picture" />
+		<setting id="picture-frost" label="Frost Picture" type="picture" />
+		<setting id="picture-night" label="Night Picture" type="picture" />
+		<setting id="picture-standby" label="Standby Picture" type="picture" />
+		<setting id="picture-comfort" label="Comfort Picture" type="picture" />
+		<setting id="picture-auto" label="Auto Picture" type="picture" />
+		<setting label="State object" type="comment" />
+		<setting id="mode-object" label="Mode object" type="object" />
+</settings>
+	<feedbacks>
+		<feedback id="mode-object"/>
+	</feedbacks>
+</widget>
