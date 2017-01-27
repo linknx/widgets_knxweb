@@ -17,7 +17,11 @@ CObjecthistory.prototype.updateObject = function(obj,value) {
       this.dern_value = value;
       var now = new Date();
       // 2012-2-7 20:43:18
-      var now_string = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDay() + ' ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+      var now_string = now.getFullYear() + '-' + ((now.getMonth()<9)?'0'+(now.getMonth() + 1):(now.getMonth() + 1)) + '-' ;
+      now_string = now_string + ((now.getDate()<10)? '0':'') + now.getDate() + ' ' ;
+      now_string = now_string + ((now.getHours()<10)? '0':'') + now.getHours() + ':';
+      now_string = now_string + ((now.getMinutes()<10)? '0':'') + now.getMinutes() + ':';
+      now_string = now_string + ((now.getSeconds()<10)? '0':'') + now.getSeconds();
       $('tbody', this.div).prepend('<tr><th>' + now_string + '</th><td>' + value + '</td></tr>');
       $("tbody tr:gt(" + ( this.nbenreg - 1 ) + ")", this.div).remove(); 
     }
@@ -48,9 +52,9 @@ CObjecthistory.prototype.refreshHTML = function() {
       {
         var tableau = responseHTML.split('<br />');
         for (var i=0; i<tableau.length; i++) {
-          var elem = tableau[i].split(' &gt; ');
+          var elem = tableau[i].split(' > ');    // &gt;
           dern_value = elem[1]; 
-          tabledata.prepend('<tr><th>' +  elem[0] + '</th><td>' + elem[1] + '</td></tr>');
+          if (elem[1]) tabledata.prepend('<tr><th>' +  elem[0] + '</th><td>' + elem[1] + '</td></tr>');
         }
       },
       error: function (XMLHttpRequest, textStatus, errorThrown) {
